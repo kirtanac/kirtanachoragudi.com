@@ -1,0 +1,85 @@
+// Override default variables before the import
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+$body-bg: #AA998F;
+$body-color: #302F4D;
+$theme-colors: (
+  "primary": #F9EAE1,
+  "danger": #CC8B86
+);
+
+// check for more vars: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+$font-family-sans-serif: 'Nanum Gothic', Helvetica, sans-serif !important;
+$font-family:        $font-family-sans-serif !important;
+$font-family-serif:        $font-family-sans-serif !important;
+$font-family-monospace:   "Courier New", monospace !default;
+
+$font-family: 'Nanum Gothic', Helvetica, sans-serif !important;
+
+$brand-primary:         #302F4D !default; // #337ab7
+$brand-success:         #CC8B86 !default;
+$brand-info:            #CC8B86 !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            #CC8B86 !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+$headings-font-family: $font-family-sans-serif !default;
+$link-font-family: $font-family-sans-serif !default;
+
+.navbar .nav > a {
+color:          red !important;
+font-family:    $font-family-sans-serif !important;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  // background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  // color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+// Import Bootstrap and its default variables
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
