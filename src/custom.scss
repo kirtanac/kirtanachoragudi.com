@@ -1,5 +1,6 @@
 // Override default variables before the import
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 $body-bg: #AA998F;
 $body-color: #302F4D;
 $theme-colors: (
@@ -9,12 +10,13 @@ $theme-colors: (
 
 // check for more vars: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
 
-$font-family-sans-serif: 'Nanum Gothic', Helvetica, sans-serif !important;
+$font-family-sans-serif: 'Karla', Helvetica, sans-serif !important;
 $font-family:        $font-family-sans-serif !important;
 $font-family-serif:        $font-family-sans-serif !important;
-$font-family-monospace:   "Courier New", monospace !default;
+$font-family-monospace:   "Karla", monospace !default;
+// $font-family-monospace:   "Courier New", monospace !default;
 
-$font-family: 'Nanum Gothic', Helvetica, sans-serif !important;
+$font-family: 'Karla', Helvetica, sans-serif !important;
 
 $brand-primary:         #302F4D !default; // #337ab7
 $brand-success:         #CC8B86 !default;
@@ -40,7 +42,15 @@ $link-font-family: $font-family-sans-serif !default;
 .navbar .nav > a {
 color:          red !important;
 font-family:    $font-family-sans-serif !important;
+}
 
+.nav-link {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.nav-brand {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800;
 }
 
 .App {
@@ -50,6 +60,20 @@ font-family:    $font-family-sans-serif !important;
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.section {
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
