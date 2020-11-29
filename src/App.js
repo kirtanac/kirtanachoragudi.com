@@ -15,32 +15,30 @@ Pellentesque id nibh tortor id aliquet lectus proin. Blandit cursus risus at ult
         <Section
           title="Section 1"
           subtitle={dummyText}
-          dark={true}
+          dark={false}
           id="section1"
+        />
+        <Section
+          title="education"
+          dark={true}
+          id="education"
+        />
+        <Section
+          title="experience"
+          dark={false}
+          id="experience"
         />
         <Section
           title="Section 2"
           subtitle={dummyText}
-          dark={false}
+          dark={true}
           id="section2"
         />
         <Section
           title="Section 3"
           subtitle={dummyText}
-          dark={true}
-          id="section3"
-        />
-        <Section
-          title="Section 4"
-          subtitle={dummyText}
           dark={false}
-          id="section4"
-        />
-        <Section
-          title="Section 5"
-          subtitle={dummyText}
-          dark={true}
-          id="section5"
+          id="section3"
         />
       </div>
     );
