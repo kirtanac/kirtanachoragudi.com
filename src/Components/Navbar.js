@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { Nav, Navbar } from 'react-boostrap';
 
 export default class MyNavbar extends Component {
   scrollToTop = () => {
@@ -10,58 +10,78 @@ export default class MyNavbar extends Component {
 
   render() {
     return (
-
-      <Navbar bg="light" sticky="top" className="navbar" expand="lg">
-  <Navbar.Brand className="nav-brand" onClick={this.scrollToTop}>Kirtana Choragudi</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-  <Nav className="mr-auto nav-items">
-  <li className="nav-item">
-       <Link
-           href="#section2"
-           to="section2"
-           activeClass="active"
-           className="nav-link"
-           spy={true}
-           smooth={true}
-           offset={-70}
-           duration={500}
-           >
-            section2
-           </Link>
-    </li>
-
-    <li className="nav-item">
-             <Link
-                 href="#section3"
-                 to="section3"
-                 activeClass="active"
-                 className="nav-link"
-                 spy={true}
-                 smooth={true}
-                 offset={-70}
-                 duration={500}
-                 >
-                  section3
-                 </Link>
-          </li>
-
-
-    <Nav.Link
-    className="nav-link nav-item"
-    activeClass="active"
-    to="section4"
-    spy={true}
-    smooth={true}
-    offset={-70}
-    duration={500} >Section4</Nav.Link>
-
-</Nav>
-
-
-  </Navbar.Collapse>
-  </Navbar>
-
+      <Navbar bg="light" expand="lg" className="nav" id="navbar">
+        <div className="nav-content">
+          <img
+            src={logo}
+            className="nav-logo"
+            alt="Logo"
+            onClick={this.scrollToTop}
+          />
+          <ul className="nav-items">
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 1
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section2"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 2
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section3"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 3
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section4"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 4
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section5"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Section 5
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Navbar>
     );
   }
 }
