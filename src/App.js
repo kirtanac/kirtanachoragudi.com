@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.scss";
+import './custom.scss';
 import MyNavbar from "./Components/Navbar";
 import Section from "./Components/Section";
 class App extends Component {
