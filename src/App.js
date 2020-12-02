@@ -18,20 +18,20 @@ Pellentesque id nibh tortor id aliquet lectus proin. Blandit cursus risus at ult
           dark={false}
           id="section1"
         />
-        <Section
-          title="education"
-          dark={true}
-          id="education"
-        />
-        <Section
-          title="experience"
-          dark={false}
-          id="experience"
-        />
-      
+
+
       </div>
     );
   }
 }
-
+// <Section
+//   title="education"
+//   dark={true}
+//   id="education"
+// />
+// <Section
+//   title="experience"
+//   dark={false}
+//   id="experience"
+// />
 export default App;
