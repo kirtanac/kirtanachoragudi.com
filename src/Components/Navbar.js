@@ -16,32 +16,17 @@ export default class MyNavbar extends Component {
            <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav-items mr-auto">
           <Nav.Item className="nav-item">
-            <Link
+            <Nav.Link
               className="nav-link"
+              target="blank"
               activeClass="active"
-              to="education"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
+              href="https://www.linkedin.com/in/kirtana-choragudi/"
+
             >
-              Education
-            </Link>
+              LinkedIn
+            </Nav.Link>
           </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Link
-              className="nav-link"
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              Experience
-            </Link>
-          </Nav.Item>
-        
+
           </Nav>
            </Navbar.Collapse>
       </Navbar>
