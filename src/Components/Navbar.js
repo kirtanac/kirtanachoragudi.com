@@ -41,19 +41,7 @@ export default class MyNavbar extends Component {
               Experience
             </Link>
           </Nav.Item>
-            <Nav.Item className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="footer"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                Fuck
-              </Link>
-            </Nav.Item>
+        
           </Nav>
            </Navbar.Collapse>
       </Navbar>

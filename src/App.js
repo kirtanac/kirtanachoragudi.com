@@ -28,18 +28,7 @@ Pellentesque id nibh tortor id aliquet lectus proin. Blandit cursus risus at ult
           dark={false}
           id="experience"
         />
-        <Section
-          title="Section 2"
-          subtitle={dummyText}
-          dark={true}
-          id="section2"
-        />
-        <Section
-          title="Section 3"
-          subtitle={dummyText}
-          dark={false}
-          id="section3"
-        />
+      
       </div>
     );
   }
