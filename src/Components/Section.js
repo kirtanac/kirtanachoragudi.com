@@ -1,4 +1,5 @@
 import React from "react";
+import Recipes from "./Recipes";
 // import ImgBg from "../../public/home-background.png";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
@@ -63,6 +64,13 @@ export default function Section({ title, subtitle, dark, id }) {
       </div>
 
   );
+//}
+// else if(id==="recipes"){
+//
+// return (
+// <Recipes/>
+//
+// );
 }else{
 
   return (
