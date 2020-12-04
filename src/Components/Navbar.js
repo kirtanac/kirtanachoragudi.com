@@ -16,8 +16,9 @@ export default class MyNavbar extends Component {
            <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav-items mr-auto">
           <Nav.Item className="nav-item">
-            <Link
+            <Nav.Link
               className="nav-link"
+              target="blank"
               activeClass="active"
               to="education"
               spy={true}
@@ -65,6 +66,7 @@ export default class MyNavbar extends Component {
                LinkedIn
              </Nav.Link>
            </Nav.Item>
+
 
           </Nav>
            </Navbar.Collapse>

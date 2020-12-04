@@ -15,6 +15,7 @@ class App extends Component {
           dark={false}
           id="section1"
         />
+
         <Section
           title="about"
           dark={true}
@@ -35,5 +36,14 @@ class App extends Component {
     );
   }
 }
-
+// <Section
+//   title="education"
+//   dark={true}
+//   id="education"
+// />
+// <Section
+//   title="experience"
+//   dark={false}
+//   id="experience"
+// />
 export default App;
