@@ -1,4 +1,5 @@
-// Override default variables before the import
+
+/* OVERRIDING DEFAULT VARIABLES BEFORE BOOTSTRAP IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 $body-bg: white;
@@ -8,17 +9,16 @@ $theme-colors: (
   "danger": #CC8B86
 );
 
-// check for more vars: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+// TODO: check for more vars: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
 
 $font-family-sans-serif: 'Karla', Helvetica, sans-serif !important;
 $font-family:        $font-family-sans-serif !important;
 $font-family-serif:        $font-family-sans-serif !important;
 $font-family-monospace:   "Karla", monospace !default;
-// $font-family-monospace:   "Courier New", monospace !default;
 
 $font-family: 'Karla', Helvetica, sans-serif !important;
 
-$brand-primary:         #302F4D !default; // #337ab7
+$brand-primary:         #302F4D !default;
 $brand-success:         #CC8B86 !default;
 $brand-info:            #CC8B86 !default;
 $brand-warning:         #f0ad4e !default;
@@ -39,7 +39,7 @@ $link-hover-decoration: underline !default;
 $headings-font-family: $font-family-sans-serif !default;
 $link-font-family: $font-family-sans-serif !default;
 
-
+/* NAV BAR COMPONENT */
 .nav-link {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 500;
@@ -68,9 +68,25 @@ $link-font-family: $font-family-sans-serif !default;
 }
 
 
-.App {
-  text-align: center;
+/* GENERAL SECTION COMPONENT */
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
 }
+
+.section h1 {
+  color: white;
+}
+
+.content {
+  margin-top: 3em;
+}
+
+.section-light >.section-content h1 {
+  color: black;
+}
+
 @media (max-width: 414px) {
   .section {
     font-family: 'Karla', sans-serif !important;
@@ -79,6 +95,7 @@ $link-font-family: $font-family-sans-serif !default;
     width: auto;
 
   }
+
 }
 @media (min-width: 415px){
   .section {
@@ -86,8 +103,12 @@ $link-font-family: $font-family-sans-serif !default;
     font-weight: 400;
     height:100vh;
     width: auto;
-
   }
+
+
+}
+.text {
+  font-size: calc(6px + 2vmin);
 }
 
 @media only screen
@@ -103,7 +124,15 @@ $link-font-family: $font-family-sans-serif !default;
     }
 }
 
+.section-about {
+  height:100%;
+}
+
 .section {
+  font-family: 'Karla', sans-serif !important;
+  font-weight: 400;
+    height:100%;
+  width: auto;
 
 }
 
@@ -115,63 +144,12 @@ $link-font-family: $font-family-sans-serif !default;
 .section-light {
   background: white !important;
   color: black !important;
-
-
-}
-
-.top {
-  flex: 1;
-}
-
-.section-education {
-  color: white;
-  background: #CB38B3;
-
-}
-
-.section-experience {
-  background: #68B0AB;
-  color: white;
 }
 
 .section-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px;
+  height: 100%;
 }
 
-.section h1 {
-  color: white;
-}
-
-.content {
-  align-self: center;
-}
-
-.section-light >.section-content h1 {
-  color: black;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  // background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  // color: #61dafb;
-}
 .imageholder {
   object-fit: cover;
 max-width:100%;
@@ -180,7 +158,19 @@ display: flex;
 padding-bottom: 15px;
 justify-content: center;
  object-fit: contain;
+}
 
+/* TOP SECTION */
+.top {
+  font-family: 'Karla', sans-serif !important;
+  font-weight: 400;
+  height:100vh;
+  width: auto;
+    flex: 1;
+
+}
+.info-container {
+  margin-bottom: 3em;
 }
 
 .introtext {
@@ -195,6 +185,180 @@ justify-content: center;
   height: auto;
 padding: 0px;
 
+}
+
+/* ABOUT COMPONENT */
+// 43807C or og 68B0AB
+.section-about {
+  color: white;
+  background: #43807C;
+
+}
+
+/* WORK COMPONENT */
+// EAAFE1 or og F5AC72
+.section-work {
+  background: #F2C087;
+  color: white;
+}
+
+.work-box {
+  background: lightness(gray);
+  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+.work-box-hidden {
+  visibility: hidden;
+}
+
+.work-box:hover > .work-box-hidden {
+  visibility: visible;
+  color: white;
+}
+
+
+.work-box:hover > .work-box-text {
+  visibility: hidden;
+}
+
+.work-box:hover > .work-box-image {
+  visibility: hidden;
+}
+.work-box:hover {
+background: #43807C;
+height: 100%;
+
+}
+
+.work-box-image {
+  margin-bottom: 3px;
+}
+
+.work-box:hover > .work-box-title {
+  color: white;
+}
+
+.work-box:hover > .work-box-subtitle{
+  color: white;
+}
+
+
+
+.work-container {
+  height: 100%;
+}
+
+.icon{
+  height: 90px;
+  width: 90px;
+}
+
+
+
+
+
+/* RECIPES COMPONENT */
+
+// BD5B0D or og F5AC72 CA35B2
+.section-recipes {
+    background: #43807C;
+color: white;
+}
+//
+.recipes-container{
+  background: #43807C;
+}
+
+
+.recipe-pill {
+  background: #F9EAE1;
+  color: #5a5a5a;
+}
+.recipe-pill:hover {
+  background: #F2C087;
+  color: #5a5a5a;
+}
+
+.recipe-pill.active {
+  background: #F2C087 !important;
+  color: #5a5a5a !important;
+}
+.active-pill {
+  background: #F2C087 !important;
+  color: #5a5a5a !important;
+}
+
+.recipes-row {
+height: 100%;
+}
+
+.full-height {
+height: 100%;
+}
+
+// .recipes-container{
+//
+//   padding: ($spacer * 1.5) !important;
+// }
+ @media (max-width: 414px) {
+//   .nav-item-pill {
+//     width: 100%;
+//   }
+//
+//   .recipes-container {
+//     display: flex;
+//     align-items: center;
+//   }
+.recipe-pill-col {
+  width:100vw;
+}
+
+.recipe-box-col{
+  width:100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.section-content{
+  padding: 0;
+  margin: 0;
+}
+
+.recipes-container{
+  padding: 0 !important;
+}
+
+ }
+
+
+/* APP GENERAL STYLING */
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  // background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  // color: #61dafb;
 }
 
 @keyframes App-logo-spin {

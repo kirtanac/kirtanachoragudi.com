@@ -25,7 +25,7 @@ export default class MyNavbar extends Component {
               offset={-50}
               duration={500}
             >
-              Education
+              About
             </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
@@ -38,10 +38,23 @@ export default class MyNavbar extends Component {
               offset={-50}
               duration={500}
             >
-              Experience
+              Work
             </Link>
           </Nav.Item>
-        
+          <Nav.Item className="nav-item">
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="recipes"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              Recipes
+            </Link>
+          </Nav.Item>
+
           </Nav>
            </Navbar.Collapse>
       </Navbar>
