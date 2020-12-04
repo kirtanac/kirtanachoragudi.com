@@ -20,12 +20,53 @@ export default class MyNavbar extends Component {
               className="nav-link"
               target="blank"
               activeClass="active"
-              href="https://www.linkedin.com/in/kirtana-choragudi/"
-
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
             >
-              LinkedIn
-            </Nav.Link>
+              About
+            </Link>
           </Nav.Item>
+          <Nav.Item className="nav-item">
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              Work
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item">
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="recipes"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              Recipes
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item">
+             <Nav.Link
+               className="nav-link"
+               target="blank"
+               activeClass="active"
+               href="https://www.linkedin.com/in/kirtana-choragudi/"
+
+             >
+               LinkedIn
+             </Nav.Link>
+           </Nav.Item>
+
 
           </Nav>
            </Navbar.Collapse>
