@@ -11,15 +11,14 @@ class App extends Component {
         <MyNavbar />
         <Section
           title="Section 1"
-    
+
           dark={false}
           id="section1"
         />
-
         <Section
           title="about"
           dark={true}
-          id="education"
+          id="about"
         />
         <Section
           title="experience"

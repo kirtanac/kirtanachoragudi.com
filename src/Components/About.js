@@ -6,10 +6,8 @@ import { Tabs, Tab,  NavDropdown, Nav, Form, Button, FormControl, Card, Containe
 class About extends Component {
   render() {
     return (
-      <div className="section section-about" id="education">
+      <div className="section section-about" id="about">
       <div className="section-content" >
-
-
           <Container className="justify-content-md-center info-container" >
           <h1>About</h1>
           <Row className="align-content-center justify-content-md-center content text">

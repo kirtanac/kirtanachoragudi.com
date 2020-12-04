@@ -8,11 +8,11 @@ import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 
 export default function Section({ title, subtitle, dark, id }) {
 
-  if(title==="about"){
+  if(id==="about"){
     return (
       <About/>
     );
-  }else if(title==="experience"){
+  }else if(id==="experience"){
     return (
       <Work/>
     );
