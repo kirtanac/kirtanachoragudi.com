@@ -9,7 +9,7 @@ class Work extends Component {
     let rows = []
     let images = [];
 
-    let renderData = [{"img": "./MISymptoms.png", "title": "MI Symptoms", "role": "Lead", "year": "2020 - Present", "description": ""},
+    let renderData = [{"img": "./MISYmptoms.png", "title": "MI Symptoms", "role": "Lead", "year": "2020 - Present", "description": ""},
       {"img": "./183.png", "title": "EECS 183", "role": "Instructional Aide (TA)", "year": "2017 - Present", "description": ""},
       {"img": "./SevenMile.png", "title": "Seven Mile", "role": "President, Development Director", "year": "2016 - 2020", "description": ""},
       {"img": "./BCG.png", "title": "BCG", "role": "Summer Associate", "year": "2019", "description": ""},
