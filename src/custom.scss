@@ -151,14 +151,19 @@ $link-font-family: $font-family-sans-serif !default;
 }
 
 .imageholder {
-  object-fit: cover;
-max-width:100%;
+  display: flex;
+    align-items: flex-start; /* new */
+width:auto!important;
+height: auto!important;
 margin: 0;
 display: flex;
 padding-bottom: 15px;
 justify-content: center;
  object-fit: contain;
+
 }
+
+
 
 /* TOP SECTION */
 .top {
@@ -179,12 +184,18 @@ justify-content: center;
   font-size: calc(100% + .5vw);
 }
 
+
 .backgroundimage {
   margin: 0;
-  width: auto;
-  height: auto;
 padding: 0px;
 
+width:auto!important;
+height: auto!important;
+
+}
+
+.nav-link-recipe{
+  cursor: auto;
 }
 
 /* ABOUT COMPONENT */

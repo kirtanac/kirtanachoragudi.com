@@ -9,11 +9,11 @@ class Work extends Component {
     let rows = []
     let images = [];
 
-    let renderData = [{"img": "./MISymptoms.png", "title": "MI Symptoms", "role": "Lead", "year": "current", "description": ""},
-      {"img": "./183.png", "title": "EECS 183", "role": "Instructional Aide (TA)", "year": "current", "description": ""},
-      {"img": "./SevenMile.png", "title": "Seven Mile", "role": "President, Development Director", "year": "2020", "description": ""},
+    let renderData = [{"img": "./MISymptoms.png", "title": "MI Symptoms", "role": "Lead", "year": "2020 - Present", "description": ""},
+      {"img": "./183.png", "title": "EECS 183", "role": "Instructional Aide (TA)", "year": "2017 - Present", "description": ""},
+      {"img": "./SevenMile.png", "title": "Seven Mile", "role": "President, Development Director", "year": "2016 - 2020", "description": ""},
       {"img": "./BCG.png", "title": "BCG", "role": "Summer Associate", "year": "2019", "description": ""},
-      {"img": "./SADD.png", "title": "SADD", "role": "National Student Representative, Board of Directors", "year": "2019", "description": ""},
+      {"img": "./SADD.png", "title": "SADD", "role": "National Student Representative, Board of Directors", "year": "2016 - 2019", "description": ""},
       {"img": "./Microsoft.png", "title": "Microsoft", "role": "Explore Intern", "year": "2018", "description": ""}
       ];
 
@@ -25,7 +25,8 @@ class Work extends Component {
             <Card.Body className="work-box" >
               <Card.Img className="work-box-image" variant="top" src={"./" + renderData[i]["img"]} />
               <Card.Title className="font-weight-normal work-box-title">{renderData[i]["title"]}</Card.Title>
-              <Card.Subtitle className="work-box-subtitle">{renderData[i]["role"]}</Card.Subtitle>
+              <Card.Subtitle className="work-box-subtitle mb-2">{renderData[i]["year"]}</Card.Subtitle>
+              <Card.Subtitle className="work-box-subtitle"><i>{renderData[i]["role"]}</i></Card.Subtitle>
             <Card.Text className="small work-box-text">
             </Card.Text>
           </Card.Body>

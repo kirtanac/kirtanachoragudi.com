@@ -54,6 +54,17 @@ export default class MyNavbar extends Component {
               Recipes
             </Link>
           </Nav.Item>
+          <Nav.Item className="nav-item">
+             <Nav.Link
+               className="nav-link"
+               target="blank"
+               activeClass="active"
+               href="https://www.linkedin.com/in/kirtana-choragudi/"
+
+             >
+               LinkedIn
+             </Nav.Link>
+           </Nav.Item>
 
           </Nav>
            </Navbar.Collapse>

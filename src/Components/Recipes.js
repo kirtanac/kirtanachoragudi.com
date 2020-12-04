@@ -36,7 +36,7 @@ class Recipes extends Component {
            <Card.Subtitle className="mb-2 text-muted">Cookie? Brownie? Both.</Card.Subtitle>
           <Card.Text className="text-dark">
           <br/>
-            <h6 className="bold"><b>Brownie Batter Ingredients</b></h6>
+            <h6 className="bold" id="ingredients"><b>Brownie Batter Ingredients</b></h6>
             <ul>
             <li>2 cups all-purpose flour</li>
             <li>2 cups white sugar (granulated or unrefined cane sugar)</li>
@@ -64,7 +64,7 @@ class Recipes extends Component {
             </ul>
 
             <br/>
-              <h6>Steps</h6>
+              <h6 className="bold" id="steps"><b>Steps</b></h6>
               <ol>
               <li>To first make the cookie sheet, whisk together the flour, baking powder, baking soda, and salt for the cookies.</li>
               <li>In a separate bowl, mix the appropriate cookie-recipe amounts of cane sugar, brown sugar, olive oil, and almond milk until well-combined.</li>
@@ -81,6 +81,11 @@ class Recipes extends Component {
               <li>Return pan to the oven and bake for 10-15 more minutes, or until cookie layer has become golden brown. Test whether the brownies are ready by sticking a clean fork or toothpick straight into the cookie & brownies and seeing if there is leftover uncooked dough on the fork. <i>It's so chocolatey good that you might hit melty chocolate instead of actual uncooked dough so be sure to check.</i></li>
               <li>Enjoy! If you'd like, melt 3/4 cup of dark chocolate with 2-3 tbsp of coconut oil for 15 seconds at time in microwave, stirring each time until it becomes extremely liquid-y! Then, drizzle chocolate on top of your cooled cookie brownie bars to your heart’s delight</li>
               </ol>
+              <Link
+                className="nav-link-recipe"
+                activeClass="active"
+                to="recipes"
+                offset={-50}>Go back to the top of the recipe</Link>
           </Card.Text>
         </Card.Body>
           </Card>
@@ -93,7 +98,7 @@ class Recipes extends Component {
            <Card.Subtitle className="mb-2 text-muted">My go-to happy meal. Warm, rich curry with tofu blocks that make the perfect paneer substitute.</Card.Subtitle>
           <Card.Text className="text-dark">
           <br/>
-            <h6 className="bold"><b>Ingredients</b></h6>
+            <h6 className="bold" id="ingredients"><b>Ingredients</b></h6>
             <ul>
             <li>14 oz extra firm tofu</li>
             <li>5 tablespoons of coconut oil, vegan butter (<i>or non-vegan butter</i>)</li>
@@ -113,19 +118,24 @@ class Recipes extends Component {
             </ul>
 
             <br/>
-              <h6 className="bold"><b>Recipe</b></h6>
+              <h6 className="bold" id="steps"><b>Steps</b></h6>
               <ol>
               <li>Press-dry tofu for 30 minutes by covering with dry rags then topping with a baking sheet with heavy objects on top (I used a cast iron). </li>
               <li>Heat 2 to 3 tablespoons of coconut oil (or butter or vegan butter) til shimmering in a large pan.</li>
-              <li>Add 4 cloves minced garlic (or as much as you want) and 1 diced onion, cook until fragrant (2-3 mins).</li>
-              <li> Add 2 TBSpoons of coriander powder, cumin powder, turmeric powder, garam masala, curry powder, 1 spoon of chili powder, 1 table spoon of tomato paste, and a pinch of salt. Continue to cook until spices are very fragrant, about 5-7 minutes.</li>
-              <li>Add 15 oz can of tomato purée and simmer on medium heat for 5-10 minutes, stirring occasionally.</li>
-              <li>Once the tomato sauce, spices, and onions are fragrant and well cooked - add 15 oz of the canned full-fat coconut milk (if non-vegan, use cream). Stir and let simmer while covered for 10 to 15 mins.<i>Note: it will definitely splatter at this stage. Proceed with caution!</i> </li>
+              <li>Add minced garlic and diced onion, cook until fragrant (2-3 mins).</li>
+              <li>Add coriander powder, cumin powder, turmeric powder, garam masala, curry powder, 1 spoon of chili powder, 1 table spoon of tomato paste, and a pinch of salt. Continue to cook until spices are very fragrant, about 5-7 minutes.</li>
+              <li>Add full 15 oz can of tomato purée and simmer on medium heat for 5-10 minutes, stirring occasionally.</li>
+              <li>Once the tomato sauce, spices, and onions are fragrant and well cooked - add the canned full-fat coconut milk (if non-vegan, use cream). Stir and let simmer while covered for 10 to 15 mins.<i>Note: it will definitely splatter at this stage. Proceed with caution!</i> </li>
               <li><i>Optional step to get slightly firmer tofu: </i>While that is cooking, cut the dried tofu into 1-inch blocks (could also use paneer, cottage cheese, chicken) in a spoon of oil. Then, add to to the sauce.</li>
               <li>Add salt and sugar to taste. <i>My mom swears by the bit of sugar, it really matters!</i></li>
               <li>Top with cilantro, serve with rice, naan, roti, or even on greens</li>
 
               </ol>
+              <Link
+                className="nav-link-recipe"
+                activeClass="active"
+                to="recipes"
+                offset={-50}>Go back to the top of the recipe</Link>
           </Card.Text>
         </Card.Body>
           </Card>
