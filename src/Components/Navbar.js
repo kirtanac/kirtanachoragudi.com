@@ -27,7 +27,7 @@ export default class MyNavbar extends Component {
               duration={500}
             >
               About
-            </Link>
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
             <Link
