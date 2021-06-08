@@ -29,17 +29,6 @@ export default class MyNavbar extends Component {
             </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
-            <Link
-              className="nav-link"
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              Work
-            </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
             <Link

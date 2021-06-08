@@ -9,7 +9,7 @@ class Recipes extends Component {
       <div className="section section-recipes" id="recipes">
         <div className="section-content " >
         <Container className="justify-content-md-center recipes-container " as="div" >
-        <h1 className="text-light">Recipes</h1>
+        <h1 className="text-dark">Recipe Box</h1>
 
 
 <Tab.Container id="left-tabs-example"  className="bg-white  shadow-sm" defaultActiveKey="tikka-masala" >
@@ -22,9 +22,7 @@ class Recipes extends Component {
         <Nav.Item className="nav-item-pill">
           <Nav.Link activeClassName="active-pill"  eventKey="cookies" className=" recipe-pill  rounded-0">Vegan Cookie Brownies</Nav.Link>
         </Nav.Item >
-        <Nav.Item className="nav-item-pill">
-          <Nav.Link  activeClassName="active-pill" eventKey="sp-gnocchi" className="recipe-pill  rounded-0 ">Sweet Potato Gnocchi</Nav.Link>
-        </Nav.Item>
+
       </Nav>
     </Col>
     <Col sm={9} className="ml-0 full-height recipe-box-col" as="div">
@@ -135,25 +133,13 @@ class Recipes extends Component {
                 className="nav-link-recipe"
                 activeClass="active"
                 to="recipes"
-                offset={-50}>Go back to the top of the recipe</Link>
+                offset={-50}>Back to the top of the recipe</Link>
           </Card.Text>
         </Card.Body>
           </Card>
         </Tab.Pane>
 
-        <Tab.Pane eventKey="sp-gnocchi" title="Sweet Potato Gnocchi" >
-        <Card className="text-left">
-          <Card.Body className="m-4">
-            <Card.Title>Sweet Potato Gnocchi</Card.Title>
-           <Card.Subtitle className="mb-2 text-muted">Coming Soon</Card.Subtitle>
-          <Card.Text className="text-dark">
-          <br/>
 
-
-          </Card.Text>
-        </Card.Body>
-          </Card>
-        </Tab.Pane>
       </Tab.Content>
     </Col>
   </Row>

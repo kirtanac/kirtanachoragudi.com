@@ -42,13 +42,7 @@ export default function Section({ title, subtitle, dark, id }) {
       </div>
 
   );
-//}
-// else if(id==="recipes"){
-//
-// return (
-// <Recipes/>
-//
-// );
+
 }else{
 
   return (

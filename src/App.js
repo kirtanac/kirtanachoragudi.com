@@ -20,14 +20,10 @@ class App extends Component {
           dark={true}
           id="about"
         />
-        <Section
-          title="experience"
-          dark={false}
-          id="experience"
-        />
+
         <Section
           title="recipes"
-          dark={false}
+          dark={true}
           id="recipes"
         />
 
